@@ -1,0 +1,659 @@
+button{
+    cursor: pointer;
+}
+
+body{
+    font-family: "PTSans";
+    background-color: rgb(252, 252, 252);
+    display:block;
+    margin: auto;
+    width: 800px;
+    border-left: 1px solid rgb(223, 223, 223);
+    border-right: 1px solid rgb(232, 232, 232);
+    box-shadow: 1px 0px 0px rgb(240, 240, 240), -1px 0px 0px rgb(240, 240, 240), 2px 0px 0px rgb(246, 246, 246), -2px 0px 0px rgb(246, 246, 246);
+   
+}
+
+div.top_part_2{
+    width: auto;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+div.bottom_part_1{
+    width: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+div.top_part{
+    width: auto;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section {
+    background-color: white;
+    height: 1740px;
+  }
+
+div.logo{
+    font-family: none ;
+    font-size:x-large;
+    color: rgb(248, 248, 248);
+    text-shadow: -2px -0.5px rgb(247, 118, 117), 2px 0.5px black;
+    float : left;
+}
+
+
+button{
+    margin: auto;
+    color: rgb(247, 92, 71);
+    border:1px solid rgb(247, 92, 71);
+    background-color: rgb(255, 255, 255); /* Green */
+    font-weight:600;
+    padding: auto;
+    padding: 8px 10px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 92, 71);
+}
+
+
+
+input.filter{
+    margin: auto;
+    border-radius: 0.25em;
+}
+
+input.q{
+    margin-right: 10px;
+}
+
+div.add_teacher_btn{
+    margin-left: auto;
+    font-size: 16px;
+}
+
+div.add_teacher_btn_2{
+    color: rgb(247, 92, 71);
+    background-color: rgb(255, 255, 255); /* Green */
+    font-weight:600;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    font-size: 16px;
+    font: 600 13.3333px Arial;
+}
+
+a.add_teacher{
+    border:1px solid rgb(247, 92, 71);
+    padding: auto;
+    padding: 8px 10px;
+}
+
+a.add_teacher:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 92, 71);
+    
+}
+
+div.search-container{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+div.menu{
+    width: 45%;
+    display: flex;
+    margin-top:auto;
+    margin-bottom: auto;
+
+}
+
+div.menu_part{
+    margin-right: auto;
+}
+
+a:link {
+
+    text-decoration: none;
+    color: rgb(247, 92, 71);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(247, 92, 71);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(208, 84, 62);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(247, 92, 71);
+}
+
+div.menu_part_1{
+    margin-right: auto;
+    color: rgb(101, 164, 191);
+}
+
+a.menu_part_1:link{
+    text-decoration: none;
+    color: rgb(101, 164, 191);
+}
+
+a.menu_part_1:visited{
+    text-decoration: none;
+    color: rgb(101, 164, 191);
+}
+
+a.menu_part_1:hover{
+    text-decoration: none;
+    color: rgb(101, 164, 191);
+}
+
+a.menu_part_1:active{
+    text-decoration: none;
+    color: rgb(101, 164, 191);
+}
+
+.country-filter{
+    width: auto;
+}
+
+div.filter{
+    width: 90%;
+    display: flex;
+    font-size: 13px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.gender-filter{
+    width:auto;
+}
+
+.age-filter{
+    width:auto;
+}
+
+div.choose-filter{
+    color: rgb(158, 155, 151);
+    margin:auto;
+    
+}
+
+.vl {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 2px dotted rgb(158, 155, 151);
+    height: 20px;
+  }
+
+.top_tchrs_accs_block{
+    height: 440px;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tchrs_accs_wrapper{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 3px;
+    
+}
+
+
+.teachers-account-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.teachers-account-info._hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.teacher-avatar{
+    width: 100px;
+    height: 100px;
+    display: inline-block; 
+    overflow: hidden;
+    border: 4px solid rgb(224, 129, 112);
+    border-radius: 100%;
+    background-color: rgb(224, 129, 112);
+    transition: 1s
+}
+
+.star_img{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.star_fav{
+    height: 20px;
+    width: 20px;
+}
+
+.teacher-avatar:hover{
+    border: 4px solid rgb(206, 72, 27);
+ }
+
+.teacher-image{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    transition: 1s; 
+}
+
+.teacher-image:hover {
+    transform: scale(1.2); 
+}
+
+.teacher-fullname{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tchr_cntry{
+    font-size: 12px;
+}
+
+
+
+
+.stats_table_block{
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+table.stats_header{
+    cursor: pointer;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: lighter  ;
+    height: 40px;
+}
+
+td{
+    height: 30px;
+}
+
+td.stats_header:hover{
+    border-bottom: 5px solid black;
+    background-color: rgb(249,245,249);
+}
+
+table.stats_table{
+    border-top: 1px solid black;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: rgb(249,245,249);
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(1){
+    padding-left:3% ;
+    width: 40%;
+}
+td:nth-child(2){
+    width: 10%;
+}
+td:nth-child(3){
+    width: 20%;
+}
+td:nth-child(4){
+    width: 30%;
+}
+
+.close:hover {background: #e6e6ff;}
+
+hr{
+    border-top: 1px solid black;
+}
+hr:hover{
+    border-top: 1px solid rgb(192, 191, 190);;
+}
+
+.popup-teacher-info{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 248, 248, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-teacher-info._open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-teacher-info-body{
+    min-height: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup-teacher-info-content{
+    width: 700px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px  rgba(0, 0, 0, 0.56) ;
+    text-decoration: none;
+    background: white;
+    font-size: 15px;
+    position: relative;
+}
+
+.popup-teacher-title{
+    text-align: center;
+}
+
+.title-name-2{
+    font-size: 25px;
+}
+
+.additional_tchr_info{
+    padding-bottom: 10px;
+}
+
+.teacher-info{
+    display: flex;
+    padding-top: 20px ;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+p.add-teacher-to-fav{
+    cursor: pointer;
+}
+
+p.delete-teacher-from-fav{
+    cursor: pointer;
+}
+
+.tchr_contacts{
+    padding-left: 40px;
+}
+
+a.popup-teacher-email{
+    color: rgb(101, 164, 191);
+    cursor: pointer;
+}
+
+.tchr_info_name_surname{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.star_img_inf{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.toogle_map{
+    margin-left: 40px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+p.id{
+    visibility: hidden;
+    position: absolute;
+}
+
+a.show_on_map{
+    cursor: pointer;
+    color:rgb(101, 164, 191);
+    border-bottom: 1px dotted rgb(101, 164, 191);
+}
+
+.tchr_inf{
+    margin-bottom: 20px;
+}
+
+.additional_tchr_info{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.popup-add-teacher{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 248, 248, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-add-teacher._open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-open-add-teacher-form{
+    margin: 0;
+}
+
+.popup-button-add-teacher{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup_content{
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px  rgba(0, 0, 0, 0.56) ;
+    text-decoration: none;
+    background: white;
+    font-size: 15px;
+    position: relative;
+}
+
+.popup_title{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+
+p.title_name{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 63px;
+}
+
+.popup-close{
+    color:black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup-close:hover{
+    color:black;
+    cursor: pointer;
+}
+
+.popup_content_form{
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.popup_form_prt{
+    margin-top: 5px;
+}
+
+.gender_prt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color_prt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+select{
+    width: 164.32px;
+}
+
+.add-teacher-button{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button.post-teacher{
+    width: 164px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.fav_teachers_slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fav_teachers_wrapper{
+    width: 720px;
+    height: 220px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+
+.arrow {
+    height: 10px;
+    width: 10px;
+    border: solid rgb(100, 100, 100);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    margin-right: 7px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    margin-left: 7px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow:hover{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+
+.footer_text{
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.page_count{
+    color: rgb(101, 164, 191);
+    padding-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.page_num:hover{
+    cursor: pointer;
+    color: rgb(30, 82, 104);;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+   <head itemscope itemtype="http://schema.org/WebSite">
+
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Project</title>
+
+      <link rel="stylesheet" href="./css/app.css">
+
+   </head>
+   <section>
+      <body itemscope itemtype="http://schema.org/WebPage">
+
+         <script type="text/javascript" src="../build/app.js"></script>
+         <div class="top_part">
+            <div class="logo"><h1>Teachinder</h1></div>
+            <div class="search-container">
+               <input class ="q" type="text" placeholder="Enter name to search" name="search">
+               <div class="srch_btn"><button type="submit">Search</button></div>
+            </div>
+         </div>
+         <div class="top_part_2">
+            <div class = "menu">
+               <div class = "menu_part"><a href="#teachers">Teachers</a></div>
+               <div class = "menu_part"><a href="#statistics">Statistics</a></div>
+               <div class = "menu_part"><a href="#favorites">Favorites</a></div>
+               <div class = "menu_part"><a href="#about">About</a></div>
+            </div>
+            <div class="add_teacher_btn_2"><a href="#popup" class="add_teacher popup-link">Add Teacher</a></div>
+         </div>
+         <br>
+         <div class="line">
+            <hr id="line" align="center" width="50%" size=1 />
+         </div>
+         <h1 align="center">Top Teachers</h1>
+         
+         <div class="filter">
+            <p>Filter by:</p>
+            <div class="choose_filter">
+               <input class="filter" type="checkbox" name="filter" id="only_photo" value="only_photo">
+               <label for="only_photo">Show only with photo</label>
+            </div>
+            <div class="vl"></div>
+            <div class="choose_filter">
+               <input class="filter" type="checkbox" name="filter" id="only_favorites" value="only_favorites">
+               <label for="only_favorites">Show only favorites</label>
+            </div>
+         </div>
+         
+         <div class="top_tchrs_accs_block">
+            <div class="tchrs_accs_wrapper">
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Ukraine</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">India</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Denmark</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="star_img"><image class="star_fav"src="https://i.pinimg.com/originals/d6/1f/da/d61fdaa0c0ba93c6ad5f6a189e8af625.jpg"></div>
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Belgium</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">China</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">UK</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Belarus</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Poland</div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         
+         <h1 align="center">Statistics</h1>
+
+         <div class=stats_table_block>
+            <div>
+               <table class="stats_header">
+                  <tr>
+                     <td class="stats_header">Name</td>
+                     <td class="stats_header">Age</td>
+                     <td class="stats_header">Gender</td>
+                     <td class="stats_header">Nationality</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="stats_table">
+               <table class="stats_table">
+                  <tr>
+                     <td>Daisy Alexander</td>
+                     <td>28</td>
+                     <td>Female</td>
+                     <td>Vietnam</td>
+                  </tr>
+                  <tr>
+                     <td>Julia Bradley</td>
+                     <td>26</td>
+                     <td>Female</td>
+                     <td>USA</td>
+                  </tr>
+                  <tr>
+                     <td>Rita Hart</td>
+                     <td>41</td>
+                     <td>Female</td>
+                     <td>Irland</td>
+                  </tr>
+                  <tr>
+                     <td>Jonathan Jacobs</td>
+                     <td>32</td>
+                     <td>Male</td>
+                     <td>England</td>
+                  </tr>
+                  <tr>
+                     <td>Nathaniel White</td>
+                     <td>37</td>
+                     <td>Male</td>
+                     <td>Austria</td>
+                  </tr>
+                  <tr>
+                     <td>Frank Medina</td>
+                     <td>43</td>
+                     <td>Male</td>
+                     <td>Italy</td>
+                  </tr>
+                  <tr>
+                     <td>Ella Curtis</td>
+                     <td>34</td>
+                     <td>Female</td>
+                     <td>USA</td>
+                  </tr>
+                  <tr>
+                     <td>Claire Simmons</td>
+                     <td>38</td>
+                     <td>Female</td>
+                     <td>Netherlands</td>
+                  </tr>
+                  <tr>
+                     <td>Benjamin Knight</td>
+                     <td>44</td>
+                     <td>Male</td>
+                     <td>Scotland</td>
+                  </tr>
+                  <tr>
+                     <td>Norma Rose</td>
+                     <td>36</td>
+                     <td>Female</td>
+                     <td>France</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+
+         <div class="page_count">
+            <a class="page_num">1</a>
+            <a class="page_num">2</a>
+            <a class="page_num">3</a>
+            <a class="page_num">...</a>
+            <a class="page_num">last</a>
+         </div>
+
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         
+         <h1 align="center">Favorites</h1>
+         <div class="fav_teachers_slider">
+            <i class="arrow left"></i></p>
+            <div class="fav_teachers_wrapper">
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Ukraine</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">India</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Denmark</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="star_img"><image class="star_fav"src="https://i.pinimg.com/originals/d6/1f/da/d61fdaa0c0ba93c6ad5f6a189e8af625.jpg"></div>
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">Belgium</div>
+               </div>
+               <div class="tchrs_acc">
+                  <div class="tchr_avatar"><a href="#popup_tchr_info"class="pop"><img class="tchr_img" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Orange"> </a></div>
+                  <div class="tchr_name_surname">Mykyta <br> Makeyev</div>
+                  <div class="tchr_cntry">China</div>
+               </div>
+            </div>
+            <i class="arrow right"></i>
+         </div>
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         <div class="footer_text">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas 
+               molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+               Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+               placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe 
+               eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+               Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+         </div>
+         <div class="bottom_part_1">
+            <div class = "menu">
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#teachers">Teachers</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#statistics">Statistics</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#favorites">Favorites</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#about">About</a></div>
+            </div>
+            <div class="add_teacher_btn_2"><a href="#popup" class="add_teacher popup-link">Add Teacher</a></div>
+            
+         </div>
+         <br>
+
+         
+      </body>
+
+      <div id="popup" class="popup"> 
+         <div class = "popup_body">
+            <div class="popup_content">
+               <div class="popup_title">
+                  <p class="title_name">Add Teacher</p>
+                  <a href="#" class="popup_close">x</a>         
+               </div>
+               <form class="popup_content_form">
+                  <div class="popup_form_prt">
+                     <label for="formName">Name</label><br>
+                     <input id="formName" name="name" type="text" placeholder="Enter name" required/>
+                  </div>
+                  <div class="popup_form_prt cntry_part">
+                     <label for="formCountry">Country</label><br>
+                     <select id="country" name="country">
+                        <option value="Ukarine">Ukarine</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                     </select>
+                  </div>
+                  <div class="popup_form_prt">
+                     <label for="formCity">City</label><br>
+                     <input id="formCity" name="city" type="text" required/>
+                  </div>
+                  <div class="popup_form_prt">
+                     <label for="formPhone">Phone</label><br>
+                     <input id="formPhone" name="phone" type="text" required/>
+                  </div>
+                  <div class="popup_form_prt">
+                     <label for="formEmail">Email</label><br>
+                     <input id="formEmail" name="email" type="email" required/>
+                  </div>
+                  <div class="popup_form_prt">
+                     <label for="formBirth">Age</label><br>
+                     <input id="formBirth" name="Age" type="text" required/>
+                  </div>
+                  <div class="popup_form_prt gender_prt" >
+                     <span>Sex</span>
+                     <div>
+                        <label>Male<input type="radio" name="gender" value="male" required/></label>
+                        <label>Female<input type="radio" name="gender" value="female" required/></label>
+                     </div>
+                  </div>
+                  <div class="popup_form_prt color_prt">
+                     <label for="formBackground">Backgorund color</label>
+                     <input id="formBackground" name="backgorund" type="color" required/>
+                  </div>
+                  <div class="add_tchr_btn">
+                     <button class="btn_close">Add</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="popup_tchr_info" class="popup_tchr_info"> 
+         <div class = "popup_tchr_info_body">
+            <div class="popup_tchr_info_content">
+               <div class="popup_tchr_title">
+                  <p class="title_name_2">Teacher Info</p>       
+               </div>
+               <a href="#" class="popup_close">x</a>  
+               <div class="tchr_info">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" alt="Girl in a jacket" width="250" height="250">
+                  <div class="tchr_contacts">
+                     <div class="tchr_inf tchr_info_name_surname">Mykyta Makeev</div>
+                     <div class="star_img_inf"><image class="star_inf_fav"src="https://i.pinimg.com/originals/d6/1f/da/d61fdaa0c0ba93c6ad5f6a189e8af625.jpg" width="30" height="30"></div>
+                     <div class="tchr_inf tchr_city_cntry">Kyiv, Ukraine</div>
+                     <div class="tchr_inf tchr_years_gender">36, M</div>
+                     <a class="email">qweasd@gmail.com</a>
+                     <p>+380991232323</p>
+                  </div>
+               </div>
+               <div class="additional_tchr_info">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
+               <div class="toogle_map"><a class="show_on_map">toogle map</a></div>
+            </div>
+         </div>
+      </div>
+   </section>
+</html>

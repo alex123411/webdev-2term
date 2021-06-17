@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+   <head itemscope itemtype="http://schema.org/WebSite">
+
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Project</title>
+
+      <link rel="stylesheet" href="./css/app.css">
+
+   </head>
+   <section>
+      <body itemscope itemtype="http://schema.org/WebPage">
+
+         <script type="text/javascript" src="../build/app.js"></script>
+         <div class="top_part">
+            <div class="logo"><h1>Teachinder</h1></div>
+            <div class="search-container">
+               <input id = "search-field" class ="search-field" type="text" placeholder="Search somebody.." name="search">
+               <div class="srch_btn"><button id ="search-teacher-by-parametr" type="submit">Search</button></div>
+            </div>
+         </div>
+         <div class="top_part_2">
+            <div class = "menu">
+               <div class = "menu_part"><a href="#teachers">Teachers</a></div>
+               <div class = "menu_part"><a href="#statistics">Statistics</a></div>
+               <div class = "menu_part"><a href="#favorites">Favorites</a></div>
+               <div class = "menu_part"><a href="#about">About</a></div>
+            </div>
+            <div  class="popup-button-add-teacher">
+               <button id="popup-button-add-teacher" class = "popup-open-add-teacher-form">Add Teacher</button>
+            </div>
+         </div>
+         <br>
+         <div class="line">
+            <hr id="line" align="center" width="50%" size=1 />
+         </div>
+         <h1 align="center">All Teachers</h1>
+         
+         <div class="filter">
+            <p>Filter by:</p>
+            <div class="choose-filter">
+               <select class="country-filter" name="filter" id="country-filter" value="country-filter">
+                  <option value="">Choose a country</option>
+                  <option value="dk">Denmark</option>
+                  <option value="au">Australia</option>
+                  <option value="us">USA</option>
+                  <option value="fr">France</option>
+                  <option value="ch">Switzerland</option>
+               </select>               
+               <label for="country-filter">Country</label>
+            </div>
+            <div class="vl"></div>
+            <div class="choose-filter">
+               <select class="age-filter" name="filter" id="age-filter" value="age-filter">
+                  <option value="">Choose an age</option>
+                  <option value="20+">20+</option>
+                  <option value="30+">30+</option>
+                  <option value="40+">40+</option>
+                  <option value="50+">50+</option>
+               </select> 
+               <label for="age-filter">Age</label>
+            </div>
+            <div class="vl"></div>
+            <div class="choose-filter">
+               <select class="gender-filter" name="filter" id="gender-filter" value="gender-filter">
+                  <option value="">Choose a gender</option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+               </select> 
+               <label for="gender-filter">Gender</label>
+            </div>
+            <div class="vl"></div>
+            <div class="choose-filter">
+               <input class="filter" type="checkbox" name="filter" id="only-favourites-filter" value="only-favourites-filter">
+               <label for="only-favourites-filter">Show only favorite</label>
+            </div>
+         </div>
+         
+         <div class="top_tchrs_accs_block">
+            <div id = "tchrs_accs_wrapper" class="tchrs_accs_wrapper">
+               
+            </div>
+         </div>
+         <div id = 'on-next-click', class = "pagination 1">NEXT</div>
+
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         
+         <h1 align="center">Statistics</h1>
+
+         <div class=stats_table_block>
+            <div>
+               <table class="stats_header">
+                  <tr>
+                     <td id="name-th" class="stats_header">Name</td>
+                     <td id="age-th" class="stats_header">Age</td>
+                     <td id="gender-th" class="stats_header">Gender</td>
+                     <td id="nationality-th" class="stats_header">Nationality</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="stats_table">
+               <table id="stats-table" class="stats_table">
+                  <tbody id="stats-table-body">
+
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="page_count">
+            <a class="page_num">1</a>
+            <a class="page_num">2</a>
+            <a class="page_num">3</a>
+            <a class="page_num">...</a>
+            <a class="page_num">last</a>
+         </div>
+
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         
+         <h1 align="center">Favorites</h1>
+         <div class="fav_teachers_slider">
+            <i class="arrow left"></i></p>
+            <div class="fav_teachers_wrapper">
+               <div class="teachers-account-info">
+                  <div class="teacher-avatar"><a href="#popup_tchr_info"class="pop"><img class="teacher-image" src="" alt="Teacher-image"> </a></div>
+                  <div class="teacher-fullname"></div>
+                  <div class="teacher-country"></div>
+               </div>
+               <div class="teachers-account-info">
+                  <div class="teacher-avatar"><a href="#popup_tchr_info"class="pop"><img class="teacher-image" src="" alt="Teacher-image"> </a></div>
+                  <div class="teacher-fullname"></div>
+                  <div class="teacher-country"></div>
+               </div>
+               <div class="teachers-account-info">
+                  <div class="teacher-avatar"><a href="#popup_tchr_info"class="pop"><img class="teacher-image" src="" alt="Teacher-image"> </a></div>
+                  <div class="teacher-fullname"></div>
+                  <div class="teacher-country"></div>
+               </div>
+               <div class="teachers-account-info">
+                  <div class="teacher-avatar"><a href="#popup_tchr_info"class="pop"><img class="teacher-image" src="" alt="Teacher-image"> </a></div>
+                  <div class="teacher-fullname"></div>
+                  <div class="teacher-country"></div>
+               </div>
+               <div class="teachers-account-info">
+                  <div class="teacher-avatar"><a href="#popup_tchr_info"class="pop"><img class="teacher-image" src="" alt="Teacher-image"> </a></div>
+                  <div class="teacher-fullname"></div>
+                  <div class="teacher-country"></div>
+               </div>
+            </div>
+            <i class="arrow right"></i>
+         </div>
+         <div class="line">
+            <hr  id="line" align="center" width="50%" size=1 />
+         </div>
+         <div class="footer_text">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas 
+               molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+               Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+               placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe 
+               eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
+               Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+         </div>
+         <div class="bottom_part_1">
+            <div class = "menu">
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#teachers">Teachers</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#statistics">Statistics</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#favorites">Favorites</a></div>
+               <div class = "menu_part_1"><a class = "menu_part_1" href="#about">About</a></div>
+            </div>
+            <div  class="popup-button-add-teacher">
+               <button id="popup-button-add-teacher-bottom" class = "popup-open-add-teacher-form">Add Teacher</button>
+            </div>
+         </div>
+         <br>
+
+      <div id="popup-add-teacher" class="popup-add-teacher"> 
+         <div class = "popup_body">
+            <div class="popup_content">
+               <div class="popup_title">
+                  <p class="title_name">Add Teacher</p>
+                  <a id="popup-close-teacher-form" class="popup-close">x</a>         
+               </div>
+               <div  class="popup_content_form">
+                  <form id = 'teacherForm' method = "POST">
+                     <div class="popup_form_prt">
+                        <label for="formName">Name</label><br>
+                        <input id="formName" name="name" type="text" placeholder="Enter name" required/>
+                     </div>
+                     <div class="popup_form_prt cntry_part">
+                        <label for="formCountry">Country</label><br>
+                        <select id="country" name="country">
+                           <option value="Ukarine">Ukarine</option>
+                           <option value="Russia">Russia</option>
+                           <option value="USA">USA</option>
+                           <option value="Canada">Canada</option>
+                        </select>
+                     </div>
+                     <div class="popup_form_prt">
+                        <label for="formCity">City</label><br>
+                        <input id="formCity" name="city" type="text" required/>
+                     </div>
+                     <div class="popup_form_prt">
+                        <label for="formPhone">Phone</label><br>
+                        <input id="formPhone" class = 'input-number' name="phone" type="number" required />
+                     </div>
+                     <div class="popup_form_prt">
+                        <label for="formEmail">Email</label><br>
+                        <input id="formEmail" name="email" type="email" required/>
+                     </div>
+                     <div class="popup_form_prt">
+                        <label for="formBirth">Age</label><br>
+                        <input id="formBirth" class = "input-age" name="Age" type="number" required />
+                     </div>
+                     <div class="popup_form_prt gender_prt" >
+                        <span>Gender</span>
+                        <div>
+                           <label>Male<input id="male_radio"  type="radio" name="gender" value="male" checked/></label>
+                           <label>Female<input id="female_radio" type="radio" name="gender" value="female" /></label>
+                        </div>
+                     </div>
+                     <div class="popup_form_prt color_prt">
+                        <label for="formBackground">Backgorund color</label>
+                        <input id="formBackground" name="backgorund" type="color" />
+                     </div>
+                     <div class="add-teacher-button">
+                        <button id = "post-teacher" class="post-teacher">Add</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div id="popup-teacher-info" class="popup-teacher-info"> 
+         <div class = "popup-teacher-info-body">
+            <div class="popup-teacher-info-content">
+               <div class="popup-teacher-title">
+                  <p class="title-name-2">Teacher Info</p>       
+               </div>
+               <a  id = "popup_close" class="popup-close">x</a>  
+               <div class="teacher-info">
+                  <img class ="popup-teacher-image" src="" alt="teacher-photo" width="250" height="250">
+                  <div class="tchr_contacts">
+                     <div class="tchr_inf tchr_info_name_surname"></div>
+                     <div class="star_img_inf"><image id = "star_inf_fav" class="star_inf_fav"src="https://i.pinimg.com/originals/d6/1f/da/d61fdaa0c0ba93c6ad5f6a189e8af625.jpg" width="30" height="30"></div>
+                     <div class="tchr_inf popup-teacher-country"></div>
+                     <div class="tchr_inf tchr_years_gender"></div>
+                     <a class="popup-teacher-email"></a>
+                     <p class= "popup-teacher-phone-number"></p>
+                  </div>
+                  <div class = "popup-add-teacher-to-fav">
+                     <p id = "toggle-teacher-to-fav"></p>
+                  </div>
+               </div>
+               <div class="additional_tchr_info">
+                  <p class = "popup-teacher-note"></p>
+               </div>
+               <div class="toogle_map"><a class="show_on_map">toogle map</a></div>
+               <p id = "popup-teacher-id"class="id"></p>
+            </div>
+         </div>
+      </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="js/scripts.js"></script>
+   </body>
+   </section>
+</html>

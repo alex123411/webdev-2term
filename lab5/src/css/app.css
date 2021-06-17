@@ -1,0 +1,13 @@
+/* Import fonts */
+@import url('../fonts/Roboto.css');
+
+/* Reset and normalize */
+@import url('./../scss/style.scss');
+
+@import url('./popup.css');
+
+
+@import url("../fonts/PTSans.css");
+
+
+

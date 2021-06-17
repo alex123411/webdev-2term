@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>New</title>
+   </head>
+
+   <body>
+       <form method="POST">
+           <div>
+               <label for="formName">Full name</label>
+               <input id="formName" name="name" type="text" required/>
+           </div>
+           <div>
+                <span>Gender</span>
+                <label><input type="radio" name="gender" value="male" required/>Male</label>
+                <label><input type="radio" name="gender" value="female" required/>Female</label>
+            </div>
+            <div>
+                <label for="formBirth">Birthdate</label>
+                <input id="formBirth" name="birthdate" type="date" required/>
+            </div>
+            <div>
+                <label for="formEmail">Email</label>
+                <input id="formEmail" name="email" type="email" required/>
+            </div>
+            <div>
+                <label for="formPhone">Phone number</label>
+                <input id="formPhone" name="phone" type="text" required/>
+            </div>
+            <div>
+                <label for="formCountry">Country</label>
+                <input id="formCountry" name="country" type="text" required/>
+            </div>
+            <div>
+                <label for="formCity">City</label>
+                <input id="formCity" name="city" type="text" required/>
+            </div>
+            <div>
+                <label for="formBackground">Backgorund color</label>
+                <input id="formBackground" name="backgorund" type="color" required/>
+            </div>
+            <div>
+                <label for="formDetails">Details</label>
+                <textarea id="formDetails" name="details" placeholder="comment here..."></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+       </form>
+  </body>
+</html>
